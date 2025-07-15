@@ -69,12 +69,12 @@ const About = () => {
               ? 'opacity-100 translate-x-0' 
               : 'opacity-0 -translate-x-10'
           }`}>
-            <div className="glass-card p-8 rounded-2xl">
-              <img
-                src="/Arya.jpg"
-                alt="ARYA THANEKAR"
-                className="w-full h-80 object-cover object-center rounded-xl mb-6"
-              />
+<div className="glass-card p-8 rounded-2xl">
+  <img
+    src="/Arya.png"
+    alt="ARYA THANEKAR"
+    className="w-full h-80 object-contain object-center rounded-xl mb-6 bg-gray-50"
+  />
 
               <h3 className="text-2xl font-bold mb-4">Arya Thanekar</h3>
               <p className="text-muted-foreground leading-relaxed">
