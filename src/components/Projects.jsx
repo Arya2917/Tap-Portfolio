@@ -6,38 +6,37 @@ const Projects = () => {
   const { elementRef: projectsRef, hasIntersected: projectsVisible } = useIntersectionObserver();
   const { elementRef: ctaRef, hasIntersected: ctaVisible } = useIntersectionObserver();
 
-  const projects = [
-    {
-      title: "ShadowTalk Platform",
-      description:
-        "ShadowTalk is a decentralized peer-to-peer chat app enabling secure, real-time, end-to-end encrypted communication without relying on centralized servers.",
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      tags: ["React", "Node.js", "MongoDB", "WebrtC"],
-      github: "https://github.com",
-      live: "https://shadow-talk-one.vercel.app/",
-    },
-    {
-      title: "Medicove",
-      description:
-        "A healthcare platform that connects patients and providers through telemedicine, appointment management, and secure medical record access.",
-      image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      tags: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
-      github: "https://github.com",
-      live: "https://medicove.vercel.app/",
-    },
-    {
-      title: "Finova",
-      description:
-        "Finova is a GenAI-powered platform that automates financial document processing using OCR, NLP, and LangChain to enable intelligent search, summarization, and chat-based interaction.",
-      image:
-        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-      tags: ["Vue.js", "Chart.js", "API Integration", "PWA"],
-      github: "https://github.com",
-      live: "https://example.com",
-    },
-  ];
+const projects = [
+  {
+    title: "ShadowTalk Platform",
+    description:
+      "ShadowTalk is a decentralized peer-to-peer chat app enabling secure, real-time, end-to-end encrypted communication without relying on centralized servers.",
+    image: "/Shadow.jpg", // Ensure this image exists in public/
+    tags: ["React", "WebSocket", "WebRTC", "TLS", "Next.js"],
+    github: "https://github.com/Arya2917/shadow-chat",
+    live: "https://shadow-talk-one.vercel.app/",
+  },
+  {
+    title: "Medicove",
+    description:
+      "A healthcare platform that connects patients and providers through telemedicine, appointment management, and secure medical record access.",
+    image: "/medicove.jpg", // Ensure this image exists in public/
+    tags: ["Next.js", "JavaScript", "MongoDB", "Express.js", "Docker"],
+    github: "https://github.com/Arya2917/medicove",
+    live: "https://medicove.vercel.app/",
+  },
+  {
+    title: "Finova",
+    description:
+      "Finova is a GenAI-powered platform that automates financial document processing using OCR, NLP, and LangChain to enable intelligent search, summarization, and chat-based interaction.",
+    image:
+      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
+    tags: ["React.js", "LangChain", "OCR", "LLM", "GenAI", "Python"],
+    github: "https://github.com/Arya2917/finova",
+    live: "https://example.com", // Update if you have the actual link
+  },
+];
+
 
   return (
     <section id="projects" className="section-padding bg-muted/30">
